@@ -1,0 +1,9 @@
+repos:
+-   repo: https://github.com/AndBoyS/pre-commit-hooks
+    rev: v1.0.0  # this is optional, use `pre-commit autoupdate` to get the latest rev!
+hooks:
+-   id: clear-notebook-outputs
+    name: clear-notebook-outputs
+    entry: clear_notebook_outputs.py
+    language: python
+    files: \.ipynb$
